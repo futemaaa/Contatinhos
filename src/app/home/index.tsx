@@ -4,8 +4,12 @@ import { Feather } from '@expo/vector-icons'
 import { styles } from "./styles"
 import { Input } from "@/app/components/input"
 import { theme } from "@/theme"
+import { useState } from "react"
+import { Contact } from "@/app/components/contact"
 
 export function Home(){
+    const [name, setName] = useState("")
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
